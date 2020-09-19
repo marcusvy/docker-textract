@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  textract:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: textract
+    working_dir: /data
+    volumes: 
+      - ./:/data
+      
